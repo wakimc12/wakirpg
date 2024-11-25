@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1e293b, #0f172a); /* Gradient từ xanh dương đậm sang xanh than */
+            color: #f1f5f9; /* Chữ trắng nhạt */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styling */
+        header {
+            background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: #facc15; /* Vàng sáng */
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow cho chữ dễ đọc */
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(50, 72, 109, 0.95); /* Xanh đậm trong suốt */
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow */
+        }
+        
+        nav a {
+            color: #38bdf8; /* Xanh nhạt */
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #facc15; /* Vàng sáng khi hover */
+            transform: scale(1.1); /* Phóng to nhẹ */
+        }
+        
+        /* Content container styling */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05); /* Nền trong suốt */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow mịn */
+        }
+        
+        /* Heading styling */
+        h2 {
+            color: #facc15; /* Vàng sáng */
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 5px;
+        }
+        
+        /* Section styling */
+        section {
+            margin-bottom: 50px;
+        }
+        
+        /* Button styling */
+        button {
+            background: #38bdf8; /* Xanh nhạt */
+            color: #1e293b; /* Xanh đậm */
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow cho nút */
+        }
+        
+        button:hover {
+            background: #0ea5e9; /* Màu xanh đậm hơn */
+            transform: translateY(-2px); /* Hiệu ứng nâng nhẹ */
+        }
+        
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(17, 24, 39, 0.9); /* Màu than */
+            color: #e2e8f0; /* Xám nhạt */
+            font-size: 1rem;
+        }
+        
+        footer a {
+            color: #38bdf8; /* Xanh nhạt */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer a:hover {
+            color: #facc15; /* Vàng sáng khi hover */
+        }
+        
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        
+            nav a {
+                font-size: 1rem;
+                margin: 0 15px;
+            }
+        
+            .container {
+                padding: 15px;
+            }
+        
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+        </style>        
+</head>
+<body>
+    <header>
+        <h1>Máy Chủ Minecraft - WAKI MMO RPG</h1>
+        <p> MÁY CHỦ RPGMMO THAM GIA CÀY CUỐC PHIÊU LƯU VÔ TẬN VỚI BẠN BÈ!</p>
+    </header>
+    <nav>
+        <a href="#connect">Cách Kết Nối</a>
+        <a href="#cachchoi">Hướng Dẫn cho Newbie</a>
+        <a href="#vip">Gói VIP</a>
+        <a href="#ketnoi">Liên Hệ</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <p>Máy chủ Waki MMO RPG mang đến cho bạn một thế giới mở với hệ thống nhiệm vụ, kỹ năng, và chiến đấu độc đáo. Tham gia ngay để phiêu lưu và cùng bạn bè khám phá, cùng nhau khiêu chiến phó bản, hầm ngục tâm tối và ẩn chứa nhiều tài nguyên, tranh đua pvp top skill, còn có các hoạt động như đốn gỗ đào đá...!</p>
+        </section>
+        <section id="connect" style="background-color: #121212; padding: 50px 25px; color: #f1f1f1; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); font-family: 'Minecraftia', sans-serif;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 28px; margin-bottom: 20px; font-weight: bold; color: #4CAF50; text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);">
+                    Kết Nối Máy Chủ Waki MMO RPG
+                </h2>
+                <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #dcdcdc;">
+                    Khám phá thế giới Minecraft đầy hấp dẫn với bạn bè. Chỉ cần làm theo các bước sau để tham gia:
+                </p>
+                <ol style="font-size: 14px; line-height: 1.8; text-align: left; margin: 0 auto; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Download icon">📥</span>
+                        <span><b>Cài đặt Modpack:</b> Tải xuống <a href="https://www.mediafire.com/file/haw4wcg09kxuvnf/ModPackv1.zip/file" target="_blank" style="color: #4CAF50; text-decoration: underline;">ModPack tại đây</a>.</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Game icon">🎮</span>
+                        <span>Mở Minecraft (phiên bản hỗ trợ: <b>1.20 Forge</b>).</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Add server icon">➕</span>
+                        <span>Chọn "Multiplayer" và nhấn "Add Server".</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Settings icon">⚙️</span>
+                        <span>Nhập thông tin sau:</span>
+                    </li>
+                    <ul style="list-style-type: none; padding-left: 30px; margin-top: -10px;">
+                        <li style="margin-bottom: 8px;"><b>Tên máy chủ:</b> Waki MMO RPG</li>
+                        <li style="margin-bottom: 8px;"><b>Địa chỉ IP:</b> <span style="color: #2196F3;">wakimc.asia</span></li>
+                        <li style="margin-bottom: 8px;"><b>Cổng:</b> 25565</li>
+                        <li>Nhấn "Done" và chọn máy chủ để bắt đầu chơi!</li>
+                    </ul>
+                </ol>
+            </div>
+            <button onclick="copyIP()" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #0078D4; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+                Sao Chép IP
+            </button>
+        </section>
+        <script>
+            async function copyIP() {
+                const ip = "wakimc.asia";
+                try {
+                    await navigator.clipboard.writeText(ip);
+                    alert(`Đã sao chép IP: ${ip}!`);
+                } catch (err) {
+                    alert('Không thể sao chép IP, vui lòng thử lại!');
+                }
+            }
+</script>
+<section id="vip" style="font-family: Arial, sans-serif; background-image: url('https://i.imgur.com/81Mhkah.jpeg'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px;">
+    <h2 style="color: #FF6F00; text-align: center;">Gói Nạp</h2>
+    <p style="text-align: center; color: #FF4081; font-size: 1.2rem;">Các Gói Nạp Vô Cùng Hấp Dẫn:</p>
+    <ul style="list-style-type: none; padding: 0; line-height: 1.8; font-size: 1rem;">
+        <li><b style="color: #388E3C;">🎉 Sự kiện x2 cho gói từ 100k trở lên khi nạp lần đầu</b>.</li>
+        <li><b style="color: #FF5722;">Gói Copper 💵</b> <span style="color: #388E3C;">20,000 VNĐ</span> = <span style="color: #2196F3;">2 Phiếu VIP</span>, <span style="color: #FF9800;">50 Lục Bảo</span>.</li>
+        <li><b style="color: #795548;">Gói Iron 💶</b> <span style="color: #388E3C;">50,000 VNĐ</span> = <span style="color: #2196F3;">5 Phiếu VIP</span>, <span style="color: #FF9800;">100 Lục Bảo</span>.</li>
+        <li><b style="color: #FFB300;">Gói Gold 💴</b> <span style="color: #388E3C;">100,000 VNĐ</span> = <span style="color: #2196F3;">10 Phiếu VIP</span>, <span style="color: #9C27B0;">1 Crystal VIP</span>, <span style="color: #FF9800;">200 Lục Bảo</span>.</li>
+        <li><b style="color: #9C27B0;">Gói Amethyst 💰</b> <span style="color: #388E3C;">200,000 VNĐ</span> = <span style="color: #2196F3;">20 Phiếu VIP</span>, <span style="color: #9C27B0;">3 Crystal VIP</span>, <span style="color: #FF9800;">400 Lục Bảo</span>.</li>
+        <li><b style="color: #0051ff;">Gói Diamond 💸</b> <span style="color: #388E3C;">500,000 VNĐ</span> = <span style="color: #2196F3;">60 Phiếu VIP</span>, <span style="color: #9C27B0;">6 Crystal VIP</span>, <span style="color: #FF9800;">1200 Lục Bảo</span>.</li>
+    </ul>
+    <h3 style="color: #565656;">Phương Thức Nạp:</h3>
+    <ul style="list-style-type: none; padding: 0; line-height: 1.8;">
+        <li><span style="color: #4CAF50;">🏧 ATM + 🎫 CARD</span></li>
+        <li><span style="color: #FF5722;">⏱ Nạp ATM Mất 3-5 Phút Để Duyệt Nếu Chờ Quá Lâu Có Thể Liên Hệ Admin.</span></li>
+        <li><span style="color: #9E9E9E;">📱 Quét mã QR để chuyển khoản ngân hàng. Hãy chắc chắn ghi đúng số tiền theo gói nạp và nội dung là <b style="color: #FF5722;">tên nhân vật</b> của bạn!</span></li>
+    </ul>
+    <img src="img_src/bank.jpg" alt="QR Code" class="qr-code" style="max-width: 100%; margin-top: 20px;">
+    <div style="text-align: center; margin-top: 20px;">
+        <button style="background-color: #FF5722; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;" 
+            onclick="alert('Liên hệ admin để nạp Card!')"
+            onmouseover="this.style.backgroundColor='#FF7043';" onmouseout="this.style.backgroundColor='#FF5722';">💬 Liên Hệ Admin Qua Discord Để Nạp Lẹ</button>
+    </div>
+</section>
+</script>
+        <section id="cachchoi" style="padding: 40px 20px; background-color: #f9f9f9;">
+            <h2 style="font-size: 32px; font-weight: bold; text-align: center; color: #333; margin-bottom: 40px;">Hướng dẫn Cho Newbie</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hd1.png" alt="Hướng dẫn 1" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Bấm phím R để chuyển đổi giữa hai trạng thái: Battle và Mining.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #f4f4f9; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hd2.png" alt="Hướng dẫn 2" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Giữ chuột trái để kích hoạt kỹ năng vũ khí có điều kiện.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #f4f4f9; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hd22.png" alt="Hướng dẫn 3" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Bạn cần trang bị kỹ năng bổ sung thêm nhiều stamina để kích hoạt kỹ năng vũ khí: Phím K để mở giao diện kỹ năng.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hd3.0.jpg" alt="Hướng dẫn 4" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Tùy chỉnh điều khiển theo sở thích cá nhân của bạn.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hd3.png" alt="Hướng dẫn 5" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Sử dụng Waystone để dịch chuyển nhanh, tiết kiệm thời gian.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #f4f4f9; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/quest.png" alt="Hướng dẫn 6" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Nhận nhiệm vụ từ NPC và hoàn thành mục tiêu để nhận phần thưởng hấp dẫn.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #f4f4f9; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/hdtrade.png" alt="Hướng dẫn 7" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Thu thập tài nguyên và chế tạo vũ khí tại các cửa hàng NPC.</p>
+                    </div>
+                </div>
+        
+                <div style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+                    <img src="img_src/phoban.png" alt="Hướng dẫn 8" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <p style="font-size: 18px; font-weight: bold; color: #2a2a2a; text-align: center;">Tham gia phó bản để nhận thưởng và hỗ trợ đồng đội.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ketnoi">
+            <h2>Discord Liên Hệ</h2>
+            <p>Tham gia cộng đồng của chúng tôi để nhận trợ giúp và thông báo mới nhất:</p>
+                <li><b>Discord:</b> <a href="https://discord.com/invite/PkXBqp3vET" target="_blank" style="color: #4CAF50;">discord.gg/wakimmo</a></li>
+                <li><b>Email:</b> wakimcjava@gmail.comemay</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bản quyền thuộc về Waki MMO RPG.</p>
+    </footer>
+</body>
+</html>
