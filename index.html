@@ -3,154 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background: linear-gradient(to bottom, #1e293b, #0f172a); /* Gradient từ xanh dương đậm sang xanh than */
-            color: #f1f5f9; /* Chữ trắng nhạt */
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Header styling */
-        header {
-            background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px;
-            text-align: center;
-            color: #facc15; /* Vàng sáng */
-            font-family: 'Arial', sans-serif;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow cho chữ dễ đọc */
-        }
-        
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-        }
-        
-        /* Navigation bar styling */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: rgba(50, 72, 109, 0.95); /* Xanh đậm trong suốt */
-            padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow */
-        }
-        
-        nav a {
-            color: #38bdf8; /* Xanh nhạt */
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin: 0 20px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        
-        nav a:hover {
-            color: #facc15; /* Vàng sáng khi hover */
-            transform: scale(1.1); /* Phóng to nhẹ */
-        }
-        
-        /* Content container styling */
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05); /* Nền trong suốt */
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow mịn */
-        }
-        
-        /* Heading styling */
-        h2 {
-            color: #facc15; /* Vàng sáng */
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            text-align: center;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
-        }
-        
-        /* Section styling */
-        section {
-            margin-bottom: 50px;
-        }
-        
-        /* Button styling */
-        button {
-            background: #38bdf8; /* Xanh nhạt */
-            color: #1e293b; /* Xanh đậm */
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow cho nút */
-        }
-        
-        button:hover {
-            background: #0ea5e9; /* Màu xanh đậm hơn */
-            transform: translateY(-2px); /* Hiệu ứng nâng nhẹ */
-        }
-        
-        /* Footer styling */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(17, 24, 39, 0.9); /* Màu than */
-            color: #e2e8f0; /* Xám nhạt */
-            font-size: 1rem;
-        }
-        
-        footer a {
-            color: #38bdf8; /* Xanh nhạt */
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        footer a:hover {
-            color: #facc15; /* Vàng sáng khi hover */
-        }
-        
-        /* Responsive design adjustments */
-        @media (max-width: 768px) {
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background: linear-gradient(to bottom, #1e293b, #0f172a); 
+                color: #e2e8f0; 
+                font-family: 'Press Start 2P', cursive; 
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+            }
+            header {
+                background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif');
+                background-size: cover;
+                background-position: center;
+                padding: 50px 20px; 
+                text-align: center;
+                color: #e2e8f0;
+                font-family: 'Press Start 2P', cursive;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+            }
+            
             header h1 {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
             }
-        
-            nav a {
+    
+            header p {
                 font-size: 1rem;
-                margin: 0 15px;
             }
-        
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: rgba(50, 72, 109, 0.95); 
+                padding: 6px 0; 
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+            }
+            
+            nav a {
+                color: #38bdf8; 
+                text-decoration: none;
+                font-size: 0.8rem; 
+                margin: 0 10px; 
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+            
+            nav a:hover {
+                color: #e2e8f0; 
+                transform: scale(1.05); 
+            }
             .container {
+                max-width: 1000px;
+                margin: 20px auto;
                 padding: 15px;
+                background: rgba(255, 255, 255, 0.1); 
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
             }
-        
+            h2 {
+                color: #facc15; 
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+                text-align: center;
+                border-bottom: 2px solid #38bdf8;
+                padding-bottom: 5px;
+            }
             button {
-                padding: 10px 20px;
-                font-size: 14px;
+                background: #38bdf8; 
+                color: #1e293b; 
+                border: none;
+                padding: 8px 18px;
+                font-size: 12px;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background 0.3s ease, transform 0.3s ease;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
             }
-        }
-        </style>        
-</head>
-<body>
-    <header>
-        <h1>Máy Chủ Minecraft - WAKI MMO RPG</h1>
-        <p> MÁY CHỦ RPGMMO THAM GIA CÀY CUỐC PHIÊU LƯU VÔ TẬN VỚI BẠN BÈ!</p>
-    </header>
-    <nav>
-        <a href="#connect">Cách Kết Nối</a>
-        <a href="#cachchoi">Hướng Dẫn cho Newbie</a>
-        <a href="#vip">Gói VIP</a>
-        <a href="#ketnoi">Liên Hệ</a>
-    </nav>
+            
+            button:hover {
+                background: #0ea5e9;
+                transform: translateY(-1px);
+            }
+            footer {
+                text-align: center;
+                padding: 15px;
+                background: rgba(17, 24, 39, 0.9); 
+                color: #e2e8f0; 
+                font-size: 0.9rem;
+            }
+            
+            footer a {
+                color: #38bdf8;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            
+            footer a:hover {
+                color: #facc15; 
+            }
+            @media (max-width: 768px) {
+                body {
+                    font-size: 9px; 
+                }
+    
+                header h1 {
+                    font-size: 1.5rem;  
+                }
+    
+                nav a {
+                    font-size: 0.7rem; 
+                    margin: 0 8px; 
+                }
+    
+                .container {
+                    padding: 10px;
+                }
+    
+                button {
+                    padding: 6px 14px;
+                    font-size: 10px; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Máy Chủ Minecraft - WAKI MMO RPG</h1>
+            <p> MÁY CHỦ RPGMMO THAM GIA CÀY CUỐC PHIÊU LƯU VÔ TẬN VỚI BẠN BÈ!</p>
+        </header>
+        <nav>
+            <a href="#connect">Cách Kết Nối</a>
+            <a href="#cachchoi">Hướng Dẫn cho Newbie</a>
+            <a href="#vip">Gói VIP</a>
+            <a href="#ketnoi">Liên Hệ</a>
+        </nav>
+    </body>
+    
     <div class="container">
         <section id="about">
             <p>Máy chủ Waki MMO RPG mang đến cho bạn một thế giới mở với hệ thống nhiệm vụ, kỹ năng, và chiến đấu độc đáo. Tham gia ngay để phiêu lưu và cùng bạn bè khám phá, cùng nhau khiêu chiến phó bản, hầm ngục tâm tối và ẩn chứa nhiều tài nguyên, tranh đua pvp top skill, còn có các hoạt động như đốn gỗ đào đá...!</p>
         </section>
-        <section id="connect" style="background-color: #121212; padding: 50px 25px; color: #f1f1f1; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); font-family: 'Minecraftia', sans-serif;">
+        <section id="connect" style="background-image: url('https://media0.giphy.com/media/6wYyXghVjlsxe3uuY5/giphy.gif?cid=6c09b952xju00ar3v0ekq9c43lc18m3f1ci7nemnms454d4v&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g'); padding: 40px 20px; color: #e2e8f0; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); font-family: 'Press Start 2P', cursive; text-align: center; margin: 20px auto; max-width: 1200px; background-size: cover; background-position: center;"></section>
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="font-size: 28px; margin-bottom: 20px; font-weight: bold; color: #4CAF50; text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);">
                     Kết Nối Máy Chủ Waki MMO RPG
@@ -199,19 +193,21 @@
             }
 </script>
 <head>
-    <!-- Link đến Google Fonts để sử dụng các phông chữ đẹp hơn -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <head>
-    <!-- Link đến Google Fonts để sử dụng các phông chữ đẹp hơn -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<head>
+    <!-- Thêm link đến font "Press Start 2P" từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
 
-<section id="vip" style="font-family: 'Poppins', sans-serif; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/81Mhkah.jpeg') center/cover; padding: 30px; border-radius: 10px; color: #fff; max-width: 800px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
-    <h2 style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 2.2em; font-weight: 700; margin-bottom: 20px; color: #FF9800; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">✨ Gói Nạp VIP</h2>
-    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 25px; color: #ddd; font-family: 'Roboto', sans-serif; font-weight: 400;">Khám phá các ưu đãi hấp dẫn ngay hôm nay:</p>
+<section id="vip" style="font-family: 'Press Start 2P', sans-serif; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/81Mhkah.jpeg') center/cover; padding: 30px; border-radius: 10px; color: #fff; max-width: 800px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+    <h2 style="text-align: center; font-family: 'Press Start 2P', sans-serif; font-size: 1.6em; font-weight: 700; margin-bottom: 20px; color: #FF9800; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">✨ Gói Nạp VIP</h2>
+    <p style="text-align: center; font-size: 1rem; margin-bottom: 25px; color: #ddd; font-family: 'Press Start 2P', sans-serif; font-weight: 400;">Khám phá các ưu đãi hấp dẫn ngay hôm nay:</p>
     
-    <ul style="padding: 0; list-style: none; line-height: 1.8; font-size: 1rem; margin: 0; font-family: 'Roboto', sans-serif; font-weight: 400;">
+    <ul style="padding: 0; list-style: none; line-height: 1.6; font-size: 0.9rem; margin: 0; font-family: 'Press Start 2P', sans-serif; font-weight: 400;">
         <li><b style="color: #4CAF50;">🎉 X2 giá trị khi nạp lần đầu (trên 100k)!</b></li>
         <li><b style="color: #FF9800;">Copper:</b> <span style="color: #c8c8c8;">20,000 VNĐ</span> - <span style="color: #2196F3;">2 Phiếu VIP</span>, <span style="color: #FF5722;">50 Lục Bảo</span></li>
         <li><b style="color: #FF9800;">Iron:</b> <span style="color: #e8e8e8;">50,000 VNĐ</span> - <span style="color: #2196F3;">5 Phiếu VIP</span>, <span style="color: #FF5722;">100 Lục Bảo</span></li>
@@ -226,7 +222,7 @@
     </div>
 
     <!-- Additional Information List -->
-    <ul style="padding: 0; list-style: none; font-size: 1rem; line-height: 1.8; color: #eee; margin: 25px 0; border-radius: 10px; background: rgba(255, 255, 255, 0.1); padding: 15px; font-family: 'Roboto', sans-serif;">
+    <ul style="padding: 0; list-style: none; font-size: 0.9rem; line-height: 1.6; color: #eee; margin: 25px 0; border-radius: 10px; background: rgba(255, 255, 255, 0.1); padding: 15px; font-family: 'Press Start 2P', sans-serif;">
         <li style="display: flex; align-items: center; margin-bottom: 15px; padding: 10px; border-radius: 5px; background: rgba(76, 175, 80, 0.1);">
             <span style="color: #4CAF50; font-size: 1.5rem; margin-right: 15px;">🏧</span>
             <span><b style="color: #fff;">Hỗ trợ ATM</b> và <b style="color: #fff;">thẻ cào</b>.</span>
@@ -243,7 +239,7 @@
     
     <!-- Contact Button -->
     <div style="text-align: center; margin-top: 30px;">
-        <button style="background-color: #FF9800; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Poppins', sans-serif;"
+        <button style="background-color: #FF9800; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Press Start 2P', sans-serif;"
             onclick="alert('Liên hệ admin để nạp Card!')"
             onmouseover="this.style.backgroundColor='#F57C00';"
             onmouseout="this.style.backgroundColor='#FF9800';">
