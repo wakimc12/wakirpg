@@ -4,139 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Toàn bộ body */
         body {
-            background: linear-gradient(to bottom, #3e3a3a, #1a1a1a); /* Gradient từ xám tối sang đen */
-            color: #eae2b7; /* Chữ vàng nhạt để dễ đọc */
-            font-family: 'Cinzel', serif; /* Font chữ Cinzel mang phong cách cổ điển */
+            background: linear-gradient(to bottom, #1e293b, #0f172a); /* Gradient từ xanh dương đậm sang xanh than */
+            color: #f1f5f9; /* Chữ trắng nhạt */
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
-    
-        /* Header */
+        
+        /* Header styling */
         header {
-            background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif'); /* Hình nền trung cổ */
+            background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif');
             background-size: cover;
             background-position: center;
             padding: 80px 20px;
             text-align: center;
-            color: #f5f0d7; /* Chữ vàng nhạt */
-            font-family: 'Cinzel', serif; /* Font chữ Cinzel */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Shadow đậm cho chữ */
+            color: #facc15; /* Vàng sáng */
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow cho chữ dễ đọc */
         }
-    
+        
         header h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
-            letter-spacing: 2px;
         }
-    
-        /* Navigation bar */
+        
+        /* Navigation bar styling */
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Nền đen trong suốt */
+            background-color: rgba(50, 72, 109, 0.95); /* Xanh đậm trong suốt */
             padding: 10px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow cho nav */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow */
         }
-    
+        
         nav a {
-            color: #eae2b7; /* Chữ vàng nhạt */
+            color: #38bdf8; /* Xanh nhạt */
             text-decoration: none;
             font-size: 1.1rem;
             margin: 0 20px;
             transition: color 0.3s ease, transform 0.3s ease;
         }
-    
+        
         nav a:hover {
-            color: #dba742; /* Màu vàng kim loại khi hover */
+            color: #facc15; /* Vàng sáng khi hover */
             transform: scale(1.1); /* Phóng to nhẹ */
         }
-    
-        /* Content container */
+        
+        /* Content container styling */
         .container {
             max-width: 1200px;
             margin: 40px auto;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.6); /* Nền tối trong suốt */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05); /* Nền trong suốt */
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow tối cho container */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow mịn */
         }
-    
-        /* Heading */
+        
+        /* Heading styling */
         h2 {
-            color: #dba742; /* Màu vàng kim loại */
-            font-size: 2.5rem;
+            color: #facc15; /* Vàng sáng */
+            font-size: 2.2rem;
             margin-bottom: 15px;
             text-align: center;
-            border-bottom: 2px solid #333; /* Viền dưới tối */
+            border-bottom: 2px solid #38bdf8;
             padding-bottom: 5px;
         }
-    
-        /* Section */
+        
+        /* Section styling */
         section {
             margin-bottom: 50px;
         }
-    
-        /* Button */
+        
+        /* Button styling */
         button {
-            background: #2c2a29; /* Màu đen xám tối */
-            color: #eae2b7; /* Chữ vàng nhạt */
+            background: #38bdf8; /* Xanh nhạt */
+            color: #1e293b; /* Xanh đậm */
             border: none;
             padding: 12px 24px;
             font-size: 16px;
             cursor: pointer;
-            border-radius: 6px;
+            border-radius: 4px;
             transition: background 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow cho nút */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow cho nút */
         }
-    
+        
         button:hover {
-            background: #dba742; /* Màu vàng kim loại khi hover */
-            color: #fff; /* Chữ trắng khi hover */
+            background: #0ea5e9; /* Màu xanh đậm hơn */
             transform: translateY(-2px); /* Hiệu ứng nâng nhẹ */
         }
-    
-        /* Footer */
+        
+        /* Footer styling */
         footer {
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7); /* Nền tối */
-            color: #eae2b7; /* Chữ vàng nhạt */
+            background: rgba(17, 24, 39, 0.9); /* Màu than */
+            color: #e2e8f0; /* Xám nhạt */
             font-size: 1rem;
         }
-    
+        
         footer a {
-            color: #dba742; /* Màu vàng kim loại */
+            color: #38bdf8; /* Xanh nhạt */
             text-decoration: none;
             font-weight: bold;
         }
-    
+        
         footer a:hover {
-            color: #f5f0d7; /* Màu vàng sáng khi hover */
+            color: #facc15; /* Vàng sáng khi hover */
         }
-    
-        /* Responsive Design */
+        
+        /* Responsive design adjustments */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5rem;
             }
-    
+        
             nav a {
                 font-size: 1rem;
                 margin: 0 15px;
             }
-    
+        
             .container {
-                padding: 20px;
+                padding: 15px;
             }
-    
+        
             button {
                 padding: 10px 20px;
                 font-size: 14px;
             }
         }
-    </style>            
+        </style>        
 </head>
 <body>
     <header>
@@ -153,9 +150,11 @@
         <section id="about">
             <p>Máy chủ Waki MMO RPG mang đến cho bạn một thế giới mở với hệ thống nhiệm vụ, kỹ năng, và chiến đấu độc đáo. Tham gia ngay để phiêu lưu và cùng bạn bè khám phá, cùng nhau khiêu chiến phó bản, hầm ngục tâm tối và ẩn chứa nhiều tài nguyên, tranh đua pvp top skill, còn có các hoạt động như đốn gỗ đào đá...!</p>
         </section>
-        <section id="connect" style="font-family: 'Arial', sans-serif; background: url('https://media1.giphy.com/media/HAEvbIgbfGkuI3fIiH/giphy.gif?cid=6c09b95275l2lf3tyylfwygri8h9j62wksafx2iuiuz8ka4n&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g') no-repeat center center/cover; padding: 40px 20px; border-radius: 10px; color: #f1f5f9; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
-            <h1 style="text-align: center; font-size: 2em;">Cách Kết Nối Vào Server</h1>        
-                </h2> 
+        <section id="connect" style="background-color: #121212; padding: 50px 25px; color: #f1f1f1; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); font-family: 'Minecraftia', sans-serif;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 28px; margin-bottom: 20px; font-weight: bold; color: #4CAF50; text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);">
+                    Kết Nối Máy Chủ Waki MMO RPG
+                </h2>
                 <p style="font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: #dcdcdc;">
                     Khám phá thế giới Minecraft đầy hấp dẫn với bạn bè. Chỉ cần làm theo các bước sau để tham gia:
                 </p>
@@ -199,32 +198,52 @@
                 }
             }
 </script>
-<section id="vip" style="font-family: 'Arial', sans-serif; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/81Mhkah.jpeg') center/cover; padding: 20px; border-radius: 10px; color: #fff; max-width: 700px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-    <h2 style="text-align: center; font-size: 1.6em; margin-bottom: 15px; color: #FF9800;">✨ Gói Nạp VIP</h2>
-    <p style="text-align: center; font-size: 1rem; margin-bottom: 15px; color: #ddd;">Khám phá các ưu đãi hấp dẫn ngay hôm nay:</p>
-    <ul style="padding: 0; list-style: none; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+<head>
+    <!-- Link đến Google Fonts để sử dụng các phông chữ đẹp hơn -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<head>
+    <!-- Link đến Google Fonts để sử dụng các phông chữ đẹp hơn -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<section id="vip" style="font-family: 'Poppins', sans-serif; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/81Mhkah.jpeg') center/cover; padding: 30px; border-radius: 10px; color: #fff; max-width: 800px; margin: 20px auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative;">
+    <h2 style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 2.2em; font-weight: 700; margin-bottom: 20px; color: #FF9800; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">✨ Gói Nạp VIP</h2>
+    <p style="text-align: center; font-size: 1.2rem; margin-bottom: 25px; color: #ddd; font-family: 'Roboto', sans-serif; font-weight: 400;">Khám phá các ưu đãi hấp dẫn ngay hôm nay:</p>
+    
+    <ul style="padding: 0; list-style: none; line-height: 1.8; font-size: 1rem; margin: 0; font-family: 'Roboto', sans-serif; font-weight: 400;">
         <li><b style="color: #4CAF50;">🎉 X2 giá trị khi nạp lần đầu (trên 100k)!</b></li>
         <li><b style="color: #FF9800;">Copper:</b> <span style="color: #c8c8c8;">20,000 VNĐ</span> - <span style="color: #2196F3;">2 Phiếu VIP</span>, <span style="color: #FF5722;">50 Lục Bảo</span></li>
         <li><b style="color: #FF9800;">Iron:</b> <span style="color: #e8e8e8;">50,000 VNĐ</span> - <span style="color: #2196F3;">5 Phiếu VIP</span>, <span style="color: #FF5722;">100 Lục Bảo</span></li>
         <li><b style="color: #FF9800;">Gold:</b> <span style="color: #fffaf3;">100,000 VNĐ</span> - <span style="color: #2196F3;">10 Phiếu VIP</span>, <span style="color: #9C27B0;">1 Crystal VIP</span></li>
         <li><b style="color: #FF9800;">Gói Amethyst 💰</b>: <span style="color: #fffcf8;">200,000 VNĐ</span> - Nhận <span style="color: #2196F3;">20 Phiếu VIP</span>, <span style="color: #9C27B0;">3 Crystal VIP</span>, <span style="color: #FF5722;">400 Lục Bảo</span></li>
         <li><b style="color: #FF9800;">Gói Diamond 💸</b>: <span style="color: #ffffff;">500,000 VNĐ</span> - Nhận <span style="color: #2196F3;">60 Phiếu VIP</span>, <span style="color: #9C27B0;">6 Crystal VIP</span>, <span style="color: #FF5722;">1200 Lục Bảo</span></li>
-        <ul style="padding: 0; list-style: none; font-size: 1rem; line-height: 1.8; color: #eee; margin: 15px 0; border-radius: 10px; background: rgba(255, 255, 255, 0.1); padding: 15px;">
-            <li style="display: flex; align-items: center; margin-bottom: 12px; padding: 8px; border-radius: 5px; background: rgba(76, 175, 80, 0.1);">
-                <span style="color: #4CAF50; font-size: 1.2rem; margin-right: 10px;">🏧</span>
-                <span><b style="color: #fff;">Hỗ trợ ATM</b> và <b style="color: #fff;">thẻ cào</b>.</span>
-            </li>
-            <li style="display: flex; align-items: center; margin-bottom: 12px; padding: 8px; border-radius: 5px; background: rgba(255, 87, 34, 0.1);">
-                <span style="color: #FF5722; font-size: 1.2rem; margin-right: 10px;">⏱</span>
-                <span>Xử lý trong <b style="color: #FFEB3B;">3-5 phút</b>. Liên hệ admin nếu chờ lâu.</span>
-            </li>
-            <li style="display: flex; align-items: center; padding: 8px; border-radius: 5px; background: rgba(33, 150, 243, 0.1);">
-                <span style="color: #2196F3; font-size: 1.2rem; margin-right: 10px;">📱</span>
-                <span>Quét mã <b style="color: #FFEB3B;">QR</b> và ghi rõ <b style="color: #FF5722;">tên nhân vật</b> trong nội dung chuyển khoản.</span>
-            </li>
-        </ul>
-    <div style="text-align: center; margin-top: 20px;">
-        <button style="background-color: #FF9800; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease;"
+    </ul>
+    
+    <!-- QR Code Image đặt dưới nội dung -->
+    <div style="text-align: center; margin-top: 30px;">
+        <img src="img_src/bidv.jpg" alt="QR Code" style="width: 200px; height: 200px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+    </div>
+
+    <!-- Additional Information List -->
+    <ul style="padding: 0; list-style: none; font-size: 1rem; line-height: 1.8; color: #eee; margin: 25px 0; border-radius: 10px; background: rgba(255, 255, 255, 0.1); padding: 15px; font-family: 'Roboto', sans-serif;">
+        <li style="display: flex; align-items: center; margin-bottom: 15px; padding: 10px; border-radius: 5px; background: rgba(76, 175, 80, 0.1);">
+            <span style="color: #4CAF50; font-size: 1.5rem; margin-right: 15px;">🏧</span>
+            <span><b style="color: #fff;">Hỗ trợ ATM</b> và <b style="color: #fff;">thẻ cào</b>.</span>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 15px; padding: 10px; border-radius: 5px; background: rgba(255, 87, 34, 0.1);">
+            <span style="color: #FF5722; font-size: 1.5rem; margin-right: 15px;">⏱</span>
+            <span>Xử lý trong <b style="color: #FFEB3B;">3-5 phút</b>. Liên hệ admin nếu chờ lâu.</span>
+        </li>
+        <li style="display: flex; align-items: center; padding: 10px; border-radius: 5px; background: rgba(33, 150, 243, 0.1);">
+            <span style="color: #2196F3; font-size: 1.5rem; margin-right: 15px;">📱</span>
+            <span>Quét mã <b style="color: #FFEB3B;">QR</b> và ghi rõ <b style="color: #FF5722;">tên nhân vật</b> trong nội dung chuyển khoản.</span>
+        </li>
+    </ul>
+    
+    <!-- Contact Button -->
+    <div style="text-align: center; margin-top: 30px;">
+        <button style="background-color: #FF9800; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Poppins', sans-serif;"
             onclick="alert('Liên hệ admin để nạp Card!')"
             onmouseover="this.style.backgroundColor='#F57C00';"
             onmouseout="this.style.backgroundColor='#FF9800';">
