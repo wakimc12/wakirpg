@@ -3,128 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@300;400;500;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background: linear-gradient(to bottom, #1e293b, #0f172a); /* Coder waki waki waki waki waki virut sex dowsex.exe :))*/
-                color: #f1f5f9; 
-                font-family: 'Roboto', sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            header {
-                background-image: url('https://i.pinimg.com/originals/78/e0/16/78e0165b8987da360efe48db7f6727b4.gif');
-                background-size: cover;
-                background-position: center;
-                padding: 80px 20px;
-                text-align: center;
-                color: #facc15; 
-                font-family: 'Montserrat', sans-serif;
-                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
-            }
-            
+    <title>Máy Chủ Minecraft WAKI MMO RPG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@300;400;500;600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1e293b, #0f172a); /* Nền gradient đẹp mắt */
+            color: #f1f5f9; 
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url("https://www.chromethemer.com/download/hd-wallpapers/minecraft-3840x2160.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: #38bdf8; 
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(50, 72, 109, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #f1f5f9;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            padding: 8px 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1); 
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Lora', serif;
+        }
+        h2 {
+            color: #ffd700;
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        section {
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        button {
+            background: #38bdf8;
+            color: #1e293b;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        button:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #e2e8f0;
+            font-size: 1rem;
+            font-family: 'Lora', serif;
+        }
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #ffd700;
+        }
+        @media (max-width: 768px) {
             header h1 {
-                font-size: 3.5rem;
-                margin-bottom: 10px;
-                font-weight: 700; 
+                font-size: 2.8rem;
             }
-            nav {
-                display: flex;
-                justify-content: center;
-                background-color: rgba(50, 72, 109, 0.95);
-                padding: 10px 0;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
-            }     
             nav a {
-                color: #38bdf8;
-                text-decoration: none;
-                font-size: 1.1rem;
-                margin: 0 20px;
-                transition: color 0.3s ease, transform 0.3s ease;
-                font-family: 'Montserrat', sans-serif;
-            }     
-            nav a:hover {
-                color: #facc15;
-                transform: scale(1.1); 
+                font-size: 1rem;
+                margin: 0 15px;
             }
             .container {
-                max-width: 1200px;
-                margin: 40px auto;
-                padding: 20px;
-                background: rgba(255, 255, 255, 0.05); 
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-                font-family: 'Lora', serif;
-            }
-            h2 {
-                color: #facc15;
-                font-size: 2.2rem;
-                margin-bottom: 15px;
-                text-align: center;
-                border-bottom: 2px solid #38bdf8;
-                padding-bottom: 5px;
-                font-family: 'Montserrat', sans-serif;
-            }
-            section {
-                margin-bottom: 50px;
+                padding: 15px;
             }
             button {
-                background: #38bdf8; 
-                color: #1e293b;
-                border: none;
-                padding: 12px 24px;
-                font-size: 16px;
-                cursor: pointer;
-                border-radius: 4px;
-                transition: background 0.3s ease, transform 0.3s ease;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                font-family: 'Montserrat', sans-serif; 
+                padding: 12px 25px;
+                font-size: 14px;
             }
-            
-            button:hover {
-                background: #0ea5e9; 
-                transform: translateY(-2px); 
-            }
-            footer {
-                text-align: center;
-                padding: 20px;
-                background: rgba(17, 24, 39, 0.9); 
-                color: #e2e8f0; 
-                font-size: 1rem;
-                font-family: 'Lora', serif; 
-            }
-            
-            footer a {
-                color: #38bdf8;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            
-            footer a:hover {
-                color: #facc15; 
-            }
-
-            @media (max-width: 768px) {
-                header h1 {
-                    font-size: 2.5rem;
-                }
-            
-                nav a {
-                    font-size: 1rem;
-                    margin: 0 15px;
-                }
-            
-                .container {
-                    padding: 15px;
-                }
-            
-                button {
-                    padding: 10px 20px;
-                    font-size: 14px;
-                }
-            }
-        </style>      
+        }
+    </style> 
 <header>
     <h1>Máy Chủ Minecraft - WAKI MMO RPG</h1>
     <p> MÁY CHỦ RPGMMO THAM GIA CÀY CUỐC PHIÊU LƯU VÔ TẬN VỚI BẠN BÈ!</p>
@@ -136,7 +139,6 @@
     <a href="#ketnoi">Liên Hệ</a>
 </nav>
 </body>
-
 <div class="container">
 <section id="about">
     <p>Máy chủ Waki MMO RPG mang đến cho bạn một thế giới mở với hệ thống nhiệm vụ, kỹ năng, và chiến đấu độc đáo. Tham gia ngay để phiêu lưu và cùng bạn bè khám phá, cùng nhau khiêu chiến phó bản, hầm ngục tâm tối và ẩn chứa nhiều tài nguyên, tranh đua pvp top skill, còn có các hoạt động như đốn gỗ đào đá...!</p>
@@ -152,7 +154,7 @@
         <ol style="font-size: 14px; line-height: 1.8; text-align: left; margin: 0 auto; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px;">
             <li style="margin-bottom: 15px; display: flex; align-items: center;">
                 <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Download icon">📥</span>
-                <span><b>Cài đặt Modpack:</b> Tải xuống <a href="https://www.mediafire.com/file/haw4wcg09kxuvnf/ModPackv1.zip/file" target="_blank" style="color: #4CAF50; text-decoration: underline;">ModPack tại đây</a>.</span>
+                <span><b>Cài đặt Modpack:</b> Tải xuống <a href="https://www.mediafire.com/file/nje3jd2j7p2wyy2/ModPackv1.zip/file" target="_blank" style="color: #4CAF50; text-decoration: underline;">ModPack tại đây</a>.</span>
             </li>
             <li style="margin-bottom: 15px; display: flex; align-items: center;">
                 <span style="font-size: 18px; color: #4CAF50; margin-right: 8px;" aria-label="Game icon">🎮</span>
@@ -210,13 +212,9 @@
         <li><b style="color: #FF9800;">Gói Amethyst 💰</b>: <span style="color: #fffcf8;">200,000 VNĐ</span> - Nhận <span style="color: #2196F3;">20 Phiếu VIP</span>, <span style="color: #9C27B0;">3 Crystal VIP</span>, <span style="color: #FF5722;">400 Lục Bảo</span></li>
         <li><b style="color: #FF9800;">Gói Diamond 💸</b>: <span style="color: #ffffff;">500,000 VNĐ</span> - Nhận <span style="color: #2196F3;">60 Phiếu VIP</span>, <span style="color: #9C27B0;">6 Crystal VIP</span>, <span style="color: #FF5722;">1200 Lục Bảo</span></li>
     </ul>
-    
-    <!-- QR Code Image đặt dưới nội dung -->
     <div style="text-align: center; margin-top: 30px;">
         <img src="img_src/bidv.jpg" alt="QR Code" style="width: 200px; height: 200px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
     </div>
-
-    <!-- Additional Information List -->
     <ul style="padding: 0; list-style: none; font-size: 1rem; line-height: 1.8; color: #eee; margin: 25px 0; border-radius: 10px; background: rgba(255, 255, 255, 0.1); padding: 15px; font-family: 'Roboto', sans-serif;">
         <li style="display: flex; align-items: center; margin-bottom: 15px; padding: 10px; border-radius: 5px; background: rgba(76, 175, 80, 0.1);">
             <span style="color: #4CAF50; font-size: 1.5rem; margin-right: 15px;">🏧</span>
@@ -231,8 +229,6 @@
             <span>Quét mã <b style="color: #FFEB3B;">QR</b> và ghi rõ <b style="color: #FF5722;">tên nhân vật</b> trong nội dung chuyển khoản.</span>
         </li>
     </ul>
-    
-    <!-- Contact Button -->
     <div style="text-align: center; margin-top: 30px;">
         <button style="background-color: #FF9800; color: white; padding: 12px 24px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; font-family: 'Poppins', sans-serif;"
             onclick="alert('Liên hệ admin để nạp Card!')"
